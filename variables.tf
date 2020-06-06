@@ -14,3 +14,13 @@ variable "client_secret" {
 variable "tenant_id" {
   description = "The unique identifier of your organization"
 }
+
+variable "credentials" {
+  description = "credentials for a docker hub account"
+  type        = list(any)
+}
+
+variable "email" {
+  description = "E-Mail Address for letsencrypt"
+  type        = string
+}
